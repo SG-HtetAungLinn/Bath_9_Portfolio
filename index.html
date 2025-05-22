@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfilio</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .phone_menu {
+            display: none;
+        }
+
+        @media (max-width:767px) {
+            .phone_menu {
+                display: block;
+            }
+
+            .desktop_menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar-example2" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Logo
+            </a>
+            <div class="phone_menu">
+                <i class="fa-solid fa-bars text-light" style="font-size: 25px;"></i>
+            </div>
+            <ul class="nav nav-pills desktop_menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Block</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="home bg-light" id="home">
+        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 90vh;">
+            <img src="./img/img.jpg" class="mb-4" alt="Profile" style="width: 200px;" />
+            <div>
+                <h2 class="text-center mb-3">Htet Aung Linn</h2>
+                <h6 class="text-center mb-3">I'm Web Developer</h6>
+                <div class="icon d-flex justify-content-center gap-3 mb-3">
+                    <div class="badge bg-primary p-2 rounded-circle fs-5">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="badge bg-primary p-2 rounded-circle fs-5">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="badge bg-primary p-2 rounded-circle fs-5">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                    <div class="badge bg-primary p-2 rounded-circle fs-5">
+                        <i class="fa-brands fa-viber"></i>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-danger rounded-pill">
+                        Hire me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about py-5">
+        <div class="container mt-5">
+            <h1 class="mb-3">About me</h1>
+            <div class="row ">
+                <div class="col-md-4 mb-3 d-flex justify-content-center align-items-center">
+                    <img src="./img/img.jpg" style="width: 150px; height: 150px;" alt="profile">
+                </div>
+                <div class="col-md-8 mb-3 d-flex justify-content-center">
+                    <div class="card w-75  ">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, dignissimos?
+                                        Exercitationem quod ipsa sequi error in similique illo provident accusantium
+                                        tempore dolores, iusto impedit, eligendi rem numquam, assumenda omnis eveniet!
+                                    </p>
+                                    <a href="#" class="btn btn-danger rounded-pill">
+                                        Download CV
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <div class="">
+                                        <h4>Development</h4>
+                                        <div class="progress" role="progressbar" aria-label="Example 5px high"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 10px">
+                                            <div class="progress-bar bg-warning" style="width: 88%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <h4>UI/UX Design</h4>
+                                        <div class="progress" role="progressbar" aria-label="Example 5px high"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 10px">
+                                            <div class="progress-bar bg-danger" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <h4>Photography</h4>
+                                        <div class="progress" role="progressbar" aria-label="Example 5px high"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 10px">
+                                            <div class="progress-bar bg-success" style="width: 88%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class=" d-flex justify-content-center align-items-center gap-3 shadow rounded p-4">
+                        <div class="icon">
+                            <i class="fa-regular fa-thumbs-up" style="font-size: 50px;"></i>
+                        </div>
+                        <div class="">
+                            <h1 style="font-size: 50px;">198</h1>
+                            <p class="m-0">Project Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class=" d-flex justify-content-center align-items-center gap-3 shadow rounded p-4">
+                        <div class="icon">
+                            <i class="fa-regular fa-thumbs-up" style="font-size: 50px;"></i>
+                        </div>
+                        <div class="">
+                            <h1 style="font-size: 50px;">198</h1>
+                            <p class="m-0">Project Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class=" d-flex justify-content-center align-items-center gap-3 shadow rounded p-4">
+                        <div class="icon">
+                            <i class="fa-regular fa-thumbs-up" style="font-size: 50px;"></i>
+                        </div>
+                        <div class="">
+                            <h1 style="font-size: 50px;">198</h1>
+                            <p class="m-0">Project Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class=" d-flex justify-content-center align-items-center gap-3 shadow rounded p-4">
+                        <div class="icon">
+                            <i class="fa-regular fa-thumbs-up" style="font-size: 50px;"></i>
+                        </div>
+                        <div class="">
+                            <h1 style="font-size: 50px;">198</h1>
+                            <p class="m-0">Project Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service" class="service py-5">
+        <div class="container mt-5">
+            <h1 class="mb-3">About me</h1>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-success shadow">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="./img/designer-1-70.svg" alt="Designer" style="width: 150px;" />
+                            </div>
+                            <h3 class="text-center">UI/UX Design</h3>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sint
+                                sapiente, fuga
+                                cupiditate dicta laudantium eaque harum nobis corporis atque! Repudiandae explicabo
+                                necessitatibus accusantium delectus. Repellat asperiores delectus fugiat quae!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-warning shadow">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="./img/coding-8.svg" alt="Designer" style="width: 150px;" />
+                            </div>
+                            <h3 class="text-center">Web Development</h3>
+                            <p class="text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sint
+                                sapiente, fuga
+                                cupiditate dicta laudantium eaque harum nobis corporis atque! Repudiandae explicabo
+                                necessitatibus accusantium delectus. Repellat asperiores delectus fugiat quae!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-danger shadow">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="./img/camera-93.svg" alt="Designer" style="width: 150px;" />
+                            </div>
+                            <h3 class="text-center">Photography</h3>
+                            <p class="text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sint
+                                sapiente, fuga
+                                cupiditate dicta laudantium eaque harum nobis corporis atque! Repudiandae explicabo
+                                necessitatibus accusantium delectus. Repellat asperiores delectus fugiat quae!</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center">
+                    Looking for custom job? <a class="text-danger" href="#">Click Here</a> to contact me.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="experience py-5">
+        <div class="container mt-5">
+            <h1 class="mb-3">Experience</h1>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex mb-3">
+                                <div class="">
+                                    <div class="">
+                                        <i class="fa-solid fa-graduation-cap text-danger"></i>
+                                    </div>
+                                    <div style="border-left: 2px solid red; height: 80%; margin-left: 8px;"></div>
+                                </div>
+                                <div class="ms-4">
+                                    <small class="text-muted">2025 - Present</small>
+                                    <h3>Academic Degree</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quod reprehenderit
+                                        velit iusto necessitatibus veniam, eligendi et ad a molestias qui quae dolorem
+                                        illo tenetur amet! A error maxime aspernatur.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="">
+                                    <div class="">
+                                        <i class="fa-solid fa-graduation-cap text-danger"></i>
+                                    </div>
+                                    <div style="border-left: 2px solid red; height: 80%; margin-left: 8px;"></div>
+                                </div>
+                                <div class="ms-4">
+                                    <small class="text-muted">2025 - Present</small>
+                                    <h3>Academic Degree</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quod reprehenderit
+                                        velit iusto necessitatibus veniam, eligendi et ad a molestias qui quae dolorem
+                                        illo tenetur amet! A error maxime aspernatur.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="">
+                                    <div class="">
+                                        <i class="fa-solid fa-graduation-cap text-danger"></i>
+                                    </div>
+                                    <div style="border-left: 2px solid red; height: 80%; margin-left: 8px;"></div>
+                                </div>
+                                <div class="ms-4">
+                                    <small class="text-muted">2025 - Present</small>
+                                    <h3>Academic Degree</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quod reprehenderit
+                                        velit iusto necessitatibus veniam, eligendi et ad a molestias qui quae dolorem
+                                        illo tenetur amet! A error maxime aspernatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex mb-3">
+                                <div class="">
+                                    <div class="">
+                                        <i class="fa-solid fa-graduation-cap text-danger"></i>
+                                    </div>
+                                    <div style="border-left: 2px solid red; height: 80%; margin-left: 8px;"></div>
+                                </div>
+                                <div class="ms-4">
+                                    <small class="text-muted">2025 - Present</small>
+                                    <h3>Academic Degree</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quod reprehenderit
+                                        velit iusto necessitatibus veniam, eligendi et ad a molestias qui quae dolorem
+                                        illo tenetur amet! A error maxime aspernatur.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="">
+                                    <div class="">
+                                        <i class="fa-solid fa-graduation-cap text-danger"></i>
+                                    </div>
+                                    <div style="border-left: 2px solid red; height: 80%; margin-left: 8px;"></div>
+                                </div>
+                                <div class="ms-4">
+                                    <small class="text-muted">2025 - Present</small>
+                                    <h3>Academic Degree</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quod reprehenderit
+                                        velit iusto necessitatibus veniam, eligendi et ad a molestias qui quae dolorem
+                                        illo tenetur amet! A error maxime aspernatur.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="">
+                                    <div class="">
+                                        <i class="fa-solid fa-graduation-cap text-danger"></i>
+                                    </div>
+                                    <div style="border-left: 2px solid red; height: 80%; margin-left: 8px;"></div>
+                                </div>
+                                <div class="ms-4">
+                                    <small class="text-muted">2025 - Present</small>
+                                    <h3>Academic Degree</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quod reprehenderit
+                                        velit iusto necessitatibus veniam, eligendi et ad a molestias qui quae dolorem
+                                        illo tenetur amet! A error maxime aspernatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="recent_work" class="recent_work py-5">
+        <div class="container mt-5">
+            <h1 class="mb-3">Recent Work</h1>
+            <div class="row">
+                <div class="d-flex gap-4 mb-3" style="flex-wrap: wrap;">
+                    <a href="" class="text-danger" style="text-decoration: none; font-weight: 600;">Everything</a>
+                    <a href="" class="text-dark" style="text-decoration: none; font-weight: 600;">Art</a>
+                    <a href="" class="text-dark" style="text-decoration: none; font-weight: 600;">Branding</a>
+                    <a href="" class="text-dark" style="text-decoration: none; font-weight: 600;">Creative</a>
+                    <a href="" class="text-dark" style="text-decoration: none; font-weight: 600;">Design</a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/financial-analyst-74.svg" width="200px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/marketing-1-91.svg" width="200px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/credit-card-95.svg" width="200px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/financial-analyst-74.svg" width="200px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/marketing-1-91.svg" width="200px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="./img/credit-card-95.svg" width="200px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-danger rounded-pill px-5">Load More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="pricing py-5">
+        <div class="container mt-5">
+            <h1 class="mb-3">Pricing Plan</h1>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-4 card shadow-lg border-none" style="height: 480px;">
+                    <div class="card-body text-center">
+                        <div>
+                            <img src="./img/marketing-1-91.svg" style="width: 150px;" alt="">
+                        </div>
+                        <h2>Basic</h2>
+                        <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, autem.</p>
+                        <p class="mb-1">Email Support</p>
+                        <p class="mb-1">$ <span style="font-size: 50px;">9</span> Month</p>
+                        <div class="">
+                            <button class="btn btn-danger rounded-pill px-4">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card shadow-lg" style="height: 520px;">
+                    <div class="card-body text-center">
+                        <div>
+                            <img src="./img/marketing-1-91.svg" style="width: 150px;" alt="">
+                        </div>
+                        <h2>Basic</h2>
+                        <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, autem.</p>
+                        <p class="mb-1">Email Support</p>
+                        <p class="mb-1">$ <span style="font-size: 50px;">9</span> Month</p>
+                        <div class="">
+                            <button class="btn btn-danger rounded-pill px-4">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card shadow-lg" style="height: 480px;">
+                    <div class="card-body text-center">
+                        <div>
+                            <img src="./img/marketing-1-91.svg" style="width: 150px;" alt="">
+                        </div>
+                        <h2>Basic</h2>
+                        <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, autem.</p>
+                        <p class="mb-1">Email Support</p>
+                        <p class="mb-1">$ <span style="font-size: 50px;">9</span> Month</p>
+                        <div class="">
+                            <button class="btn btn-danger rounded-pill px-4">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact py-5">
+        <div class="container mt-5">
+            <h1 class="mb-3">Pricing Plan</h1>
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <h5>Let's talk about everything!</h5>
+                    <p class="m-0">
+                        Don't like forms? Send me an <span class="text-danger">email.</span>
+                    </p>
+                </div>
+                <div class="col-md-7 mb-3">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address" />
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="form-control" placeholder="Subject" />
+                            </div>
+                            <div class="col-12 mb-3">
+                                <textarea class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-danger rounded-pill px-5">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-secondary py-4">
+        <p class="text-center text-light m-0">@ 2025 Bootstrap Theme</p>
+    </footer>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
